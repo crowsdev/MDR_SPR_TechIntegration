@@ -1,0 +1,60 @@
+﻿R e a d m e
+-----------
+
+//SprCow's simple refinery time script
+//
+//This Script calculates the expected refining time of your current ores and allows you
+//  to prioritize which ore you want to be refined first.
+//
+// SET UP:
+// 1. Add this script to a programming block
+// 2. Set the REFINERY_SPEED_MULTIPLIER to your game settings refinery speed. "Realistic" = 1
+// 3. Check Code, hit OK
+// 4. Add the LCD_TAG to an Display Block of your choice. Default is "[REF]"
+// 5. If the block has multiple screens, add [REF] to your Custom Data, followed by a 
+//    comma-separated list of displays to use. For example, [REF_SPEED]0 or [REF_SPEED]1,3
+// 
+// The script will display a prioritized list of ores to your LCD. The highest priority ore in
+//   the list will be moved to the front of each refinery's queue. Refineries can balance in place
+//   but will move surplus ore to the largest available storage.
+//
+// CUSTOMIZE:
+// By default, the script runs on your entire grid. To customize its behavior, place refineries and
+//   their available cargo containers into a group together and include the [REF] tag in the group name.
+//   Multiple groups are supported and may share the same cargo container. If the same refinery is
+//   included in multiple groups, it may juggle ore during processing and is not recommended.
+//
+// CONTROL:
+// 1. Use the commands UP and DOWN to move the position of the cursor.
+// 2. Use the command SELECT to highlight the current selected line.
+// 3. Use the commands UP and DOWN to move the highlighted line to your desired position.
+// 4. Use the command SELECT to deselect your line.
+// 5. Repeat until your priority list is in the desired order.
+// 6. Use the command SWITCH to cycle through available group. Priorities for each group are separate.
+
+//Changelog:
+//2022-06-12 Added DLC Refinery
+//2021-02-02 Added total time summary viewable in programmable block 
+//2021-02-02 Added support for gravel sifter and tiered tech refineries
+//2019-06-10 Finally tracked down index out of bounds exception
+//2019-06-09 Updated default values based on typical usage
+//2019-06-07 Improved logic for moving ore to storage
+//2019-06-02 Fixed error when insufficient storage available
+//2019-05-25 Added import/export priorities commands
+//2019-05-25 Added option to automatically move refinery output to storage
+//2019-05-25 Updated refining speeds based on current game data files
+//2019-05-25 Added basic support for Stone Crusher mod and Mogwais Stone Squeezer mod
+//2019-05-23 Corrected basic refinery behavior
+//2019-05-23 Major overhaul - added ore prioritization
+//2019-05-19 Added support for multi-display terminals and variable screen sizes
+//2019-05-11 Added support for basic refineries
+//           Added speed module detection
+//           Check for inactive refineries
+//           Automatically set LCD to display text
+//2019-04-10 Cleaned up for initial release
+//2019-04-19 Corrected number of active refineries when modded blocks use refinery base
+//2019-04-21 Ignore some blocks from Daily Needs mod
+//2019-04-24 Updated for better handling of unknown ores, and added Daily Needs ores
+
+//TODO add summary screen
+//TODO add per-group lcds

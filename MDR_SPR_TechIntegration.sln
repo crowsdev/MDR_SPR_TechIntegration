@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34301.259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDR_SPR_TechIntegration", "MDR_SPR_TechIntegration\MDR_SPR_TechIntegration.csproj", "{D3548DAE-BFDA-4517-8A69-7A3691D9D07F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3548DAE-BFDA-4517-8A69-7A3691D9D07F}.Debug|x64.ActiveCfg = Debug|x64
+		{D3548DAE-BFDA-4517-8A69-7A3691D9D07F}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CA8D327-6DDF-4FB7-96D4-3CE66290C336}
+	EndGlobalSection
+EndGlobal
